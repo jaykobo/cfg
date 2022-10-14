@@ -1,0 +1,19 @@
+[core]
+	excludesfile = /Users/jstrauss/.gitignore_global
+	autocrlf = input
+	fileMode = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Jakob Strauß
+	email = strauss@for-sale-digital.de
+[commit]
+	template = /Users/jstrauss/.stCommitMsg
+[color]
+	ui = true
+[init]
+	defaultBranch = main
